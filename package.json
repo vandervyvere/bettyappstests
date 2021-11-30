@@ -1,0 +1,28 @@
+{
+  "name": "bettyappstests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loadLoginPage.js",
+  "scripts": {
+    
+    "test": "testcafe chrome src/Tests/ -s 'path=artifacts/screenshots,takeOnFails=true,fullPage=true,pathPattern=${FIXTURE}/${DATE}/${TEST}/${USERAGENT}/${FILE_INDEX}.png' --reporter html:artifacts/`date +%Y%m%d%H%M`.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandervyvere/bettyappstests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vandervyvere/bettyappstests/issues"
+  },
+  "homepage": "https://github.com/vandervyvere/bettyappstests#readme",
+  "devDependencies": {
+    "testcafe": "^1.17.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
+
